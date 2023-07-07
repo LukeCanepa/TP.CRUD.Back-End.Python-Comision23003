@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title> Nueva Final de FIFA World Cup </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+  <!-- Es el ícono de la pestaña del Browser -->
+  <link rel="icon" href="./img/FIFA-World-Cup-01.jpg" type="image/x-icon">  
+
+</head>
+
+<body>
+  <header id="header"></header>
+ 
+  <main>
+    <div class="container">
+       <form  style="background-color: aliceblue;margin:10px auto ; width: 600px; padding: 20px;">
+        <h1> Ingresar Nueva Final FIFA World Cup</h1>
+        <br>
+        <div class="mb-3">
+          <label for="id"> Edición </label>
+          <input type="number" name="id" id="id">
+        </div>
+        <div class="mb-3">
+          <label for="venue"> Estadio </label>
+          <input type="text" name="venue" id="venue">
+        </div>
+        <div class="mb-3">
+          <label for="location"> Sede </label>
+          <input type="text" name="location" id="location">
+        </div>
+        <div class="mb-3">
+          <label for="winner"> Campeón </label>
+          <input type="text" name="winner" id="winner">
+        </div>
+        <div class="mb-3">
+          <label for="runner_up"> Sub-Campeón </label>
+          <input type="text" name="runner_up" id="runner_up">
+        </div>
+        <div class="mb-3">
+          <label for="score"> Resultado </label>
+          <input type="text" name="score" id="score">
+        </div>
+        <div class="mb-3">
+          <label for="attendance"> Espectadores </label>
+          <input type="number" name="attendance" id="attendance">
+        </div>        
+        <div class="mb-3">
+          <label for="official_poster"> Poster Oficial </label>
+          <input type="text" name="official_poster" id="official_poster">
+        </div>
+
+        <br>        
+    
+        <button type="button" class="btn btn-success" onclick="guardar()"> Grabar </button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  
+  <script src="./js/main.js"></script>
+  <script src="./js/producto_nuevo.js"></script>
+</body>
+
+</html>
