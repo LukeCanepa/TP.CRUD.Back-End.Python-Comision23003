@@ -60,7 +60,8 @@ for(let i = 0; i < argsUrl.length; i++){
     data[i] = argsUrl[i].split('=');
 //    alert(argsUrl[i].split('='));
 }
-console.log(data)
+
+//console.log(data)
 
 document.getElementById('id').value = decodeURIComponent(data[0][1]);
 document.getElementById('venue').value = decodeURIComponent(data[1][1]);
