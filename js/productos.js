@@ -37,8 +37,8 @@ createApp({
             fetch(url, options)
             .then(res => res.json())
             .then(res => {
-                    location.reload();
-//                  alert('Se elimino satisfactoriamente la edicion de la FIFA World Cup '+producto)
+                location.reload();
+//              alert('Se elimino satisfactoriamente la edicion de la FIFA World Cup '+producto)
             })
             .catch(err => {
                 console.error(err);
