@@ -4,7 +4,11 @@ createApp({
     data(){
         return{
            productos: [],
+<<<<<<< HEAD
 //           url: 'http://127.0.0.1:5000/productos', 
+=======
+//         url: 'http://127.0.0.1:5000/productos', 
+>>>>>>> 47954892ddd6aba88db66c0718430ea96e723ba1
            url: "https://lukecanepa.pythonanywhere.com/productos", 
            cargando: true,
            error: false
@@ -28,8 +32,13 @@ createApp({
         eliminar(producto) {
 //          alert(producto)
 //          alert('Se elimino satisfactoriamente la edicion de la FIFA World Cup '+producto)
+<<<<<<< HEAD
 //            const url = 'http://localhost:5000/productos/'+producto;
           const url = "https://lukecanepa.pythonanywhere.com/productos/"+producto;
+=======
+//          const url = 'http://localhost:5000/productos/'+producto;
+            const url = "https://lukecanepa.pythonanywhere.com/productos/"+producto;
+>>>>>>> 47954892ddd6aba88db66c0718430ea96e723ba1
             
             let options = {
                 method: 'DELETE'
