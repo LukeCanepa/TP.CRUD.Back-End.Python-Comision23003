@@ -86,11 +86,11 @@
                 
                 <tr class="" v-for="p in productos">
                   <td scope="row">{{p.id}}</td>
+                  <td>{{p.venue}}</td>
+                  <td>{{p.location}}</td>
                   <td>{{p.winner}}</td>                  
                   <td>{{p.runner_up}}</td>
                   <td>{{p.score}}</td>
-                  <td>{{p.location}}</td>
-                  <td>{{p.venue}}</td>
                   <td>{{p.attendance}}</td>
                   <td>
                     <img :src="p.official_poster" :alt="p.venue" width="100" height="100">
@@ -100,9 +100,12 @@
                     <a class="btn btn-primary" href="producto_editar.html"> Editar </a>
                     
                     <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&nombre='+p.nombre+'&precio='+p.precio+'&stock='+p.stock+'&imagen='+p.imagen"> Editar </a>  
-                    -->
+                    
 
                     <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&winner='+p.winner+'&runner_up='+p.runner_up+'&score='+p.score+'&location='+p.location+'&venue='+p.venue+'&attendance='+p.attendance+'&official_poster='+p.official_poster"> Editar </a>
+                    -->
+                    
+                    <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&venue='+p.venue+'&location='+p.location+'&winner='+p.winner+'&runner_up='+p.runner_up+'&score='+p.score+'&attendance='+p.attendance+'&official_poster='+p.official_poster"> Editar </a>    
 
                     <button type="button" class="btn btn-danger" v-on:click="eliminar(p.id)"> Eliminar </button>
                   </td>

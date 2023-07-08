@@ -1,0 +1,21 @@
+body{
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ftechbeasts.com%2Fwp-content%2Fuploads%2F2014%2F06%2FFifa-World-Cup-2014-101.jpg&f=1&nofb=1&ipt=f857ad3b95807d4c29d27e87e70db9f9076bbaa2c1dda614ef3fd84b9703e83e&ipo=images);*/
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.GmtV08buLwiXmtImrSBMqwHaEK%26pid%3DApi&f=1&ipt=ac52764bd6b390ac878537deec665b5bc2ce8917242264b8d3f22bec00e67888&ipo=images);*/
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvoltrange.com%2Fwp-content%2Fuploads%2F2021%2F05%2FFIFA-World-Cup-2022.jpg&f=1&nofb=1&ipt=9c1fc2c383de4b1c91344ca83cf9b7e100e818e344801464a84aef298b452026&ipo=images);*/
+    
+    background-image: url(/img/Wallpaper-FIFA-World-Cup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment:fixed;
+    
+/*    margin:0px;                           /*Para quitar los espacios de relleno en el header*/            
+}
+
+#h1_fifamaintittle{
+    font-size: 65px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-top: 60px;    
+    color: aquamarine;
+}
