@@ -94,15 +94,27 @@ function modificar(){
     let att = document.getElementById('attendance').value;
     let offp = document.getElementById('official_poster').value;
 
-    let producto = {
-//      id : id,      
+    let producto = {        
+        id : id,
         venue: ven,  
         location: loc,
         winner: win,
         runner_up: ru,
-        score: sc,        
-        att: att,
+        score: sc,  
+        attendance: att,      
         official_poster: offp
+
+//        {
+//            "attendance": 25000,
+//            "id": 1950,
+//            "location": "",
+//            "official_poster": "",
+//            "runner_up": "",
+//            "score": "",
+//            "venue": "",
+//            "winner": ""
+//          }
+
     }
 
     //let url = 'http://127.0.0.1:5000/productos/'+id;

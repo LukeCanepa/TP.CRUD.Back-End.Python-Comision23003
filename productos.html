@@ -28,11 +28,15 @@
     <div id="app" class="container">
       <!--
       <h1> FIFA World Cup Final Matches </h1>   # Copa Mundial de Fútbol 
-      -->
-      <h1 id="h1_anextitles" class="animate__animated animate__zoomInDown"> Finales de la FIFA World Cup </h1>
       
-      <section v-if="error">
-        <p> Lo sentimos, no podemos mostrar los datos en este momento! </p>
+      <h1 id="h1_anextitles" class="animate__animated animate__zoomInDown"> Finales de la FIFA World Cup </h1>
+      -->
+
+      <h1 id="h1_anextitles" class="animate__animated animate__flipInX"> FIFA World Cup Finals </h1>
+      <section v-if="error" id="h1_anextitles">
+        <strong>
+        <p> Lo sentimos, no podemos mostrar el listado de las finales FIFA World Cup en este momento! </p>
+        </strong>
       </section>
       <section v-else>
         <section v-if="cargando">
