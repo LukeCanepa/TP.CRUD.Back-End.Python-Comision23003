@@ -1,21 +1,78 @@
-body{
+#main_background{
     background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ftechbeasts.com%2Fwp-content%2Fuploads%2F2014%2F06%2FFifa-World-Cup-2014-101.jpg&f=1&nofb=1&ipt=f857ad3b95807d4c29d27e87e70db9f9076bbaa2c1dda614ef3fd84b9703e83e&ipo=images);
     /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.GmtV08buLwiXmtImrSBMqwHaEK%26pid%3DApi&f=1&ipt=ac52764bd6b390ac878537deec665b5bc2ce8917242264b8d3f22bec00e67888&ipo=images);*/
     /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvoltrange.com%2Fwp-content%2Fuploads%2F2021%2F05%2FFIFA-World-Cup-2022.jpg&f=1&nofb=1&ipt=9c1fc2c383de4b1c91344ca83cf9b7e100e818e344801464a84aef298b452026&ipo=images);*/
-    
     /*background-image: url(/img/Wallpaper-FIFA-World-Cup.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment:fixed;
-    
-/*    margin:0px;                           /*Para quitar los espacios de relleno en el header*/            
+    /*margin:0px;*/                           /*Para quitar los espacios de relleno en el header*/            
+}
+
+#second_background{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F8e%2F27%2F2d%2F8e272d5d066a060ebc6d7afff1c90b64.jpg&f=1&nofb=1&ipt=dba1246b71fc0f8591113724ebd1ef0059872fc8d240d89da255bd6b7e47235b&ipo=images);
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.GmtV08buLwiXmtImrSBMqwHaEK%26pid%3DApi&f=1&ipt=ac52764bd6b390ac878537deec665b5bc2ce8917242264b8d3f22bec00e67888&ipo=images);*/
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvoltrange.com%2Fwp-content%2Fuploads%2F2021%2F05%2FFIFA-World-Cup-2022.jpg&f=1&nofb=1&ipt=9c1fc2c383de4b1c91344ca83cf9b7e100e818e344801464a84aef298b452026&ipo=images);*/
+    /*background-image: url(/img/Wallpaper-FIFA-World-Cup.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment:fixed;
+    /*margin:0px;*/                           /*Para quitar los espacios de relleno en el header*/            
 }
 
 #h1_fifamaintittle{
     font-size: 65px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 80px;
     margin-top: 60px;    
     color: aquamarine;
+    text-align:justify;
 }
+
+#h1_anextitles{
+    /*color:gold;*/
+    /*color:darkseagreen;*/
+    /*color: aliceblue;*/
+    color: aquamarine;
+    text-align: left;
+}
+
+#form_background{
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thestatesman.com%2Fwp-content%2Fuploads%2F2018%2F02%2FFIFA-World-Cup-Representational-Image-Getty-Images.jpg&f=1&nofb=1&ipt=4280f44c8193ceeee363b7905d9834845471a534d56dd257e88d9e98439a7a54&ipo=images);*/
+    /*background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.daznservices.com%2Fdi%2Flibrary%2FGOAL%2F24%2F40%2Fadidas-brazuca-2014-world-cup-ball_1mcbhqg3ogjzh19on3d1u66wed.jpg&f=1&nofb=1&ipt=a09e7138918d0afe199e2bcb0aa4ce357b5351a6878f4f2d40df8ab6409becd8&ipo=images);*/
+    
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-VqYri9vY7kE%2FTa1PDp3vKUI%2FAAAAAAAABvE%2FEIx2DiKoBGk%2Fs1600%2F2010%2Bworld%2Bcup%2Bfifa%2Bwallpaper%2BFIFA-World-Cup_1.jpg&f=1&nofb=1&ipt=61a0ab894d7b219946a16ee73791a151bc86de3d1e87ad3f401c90f86e84dc68&ipo=images);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /*background-attachment:fixed;*/
+    text-align: center;
+}
+
+#label_color{
+    color:aqua;
+    /*color:rgba(30, 53, 4, 0.808)*/
+}
+
+/*#fieldset_formfinals{
+    margin:auto;    
+    display: inline-block;    
+    text-align:center;    
+    
+    background-size: contain cover;                  /* Para que la imagen de fondo cubra bien el fieldset
+    background-position: center center;
+}*/
+
+/*#form_contact{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}*/

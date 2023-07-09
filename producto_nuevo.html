@@ -13,54 +13,66 @@
   <!-- Es el ícono de la pestaña del Browser -->
   <link rel="icon" href="./img/FIFA-World-Cup-01.jpg" type="image/x-icon">  
 
+  <!-- Enlance al archivo de estilos de CSS -->
+  <link rel="stylesheet" href="./styles/styles.css"> 
+
+  <!-- Link de soporte de la biblioteca de animaciones de CSS Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 
-<body>
+<body id="second_background">
   <header id="header"></header>
  
   <main>
     <div class="container">
-       <form  style="background-color: aliceblue;margin:10px auto ; width: 600px; padding: 20px;">
-        <h1> Ingresar Nueva Final FIFA World Cup</h1>
+      <br>
+      <br>
+      <form id="form_background" style="background-color: aliceblue;margin:10px auto ; width: 550px; padding: 20px;">
+        <h1 class="animate__animated animate__zoomInDown" id="label_color"> Ingresar una Nueva Final </h1>
         <br>
+       
+        <strong>
         <div class="mb-3">
-          <label for="id"> Edición </label>
-          <input type="number" name="id" id="id">
+          <label for="id" id="label_color"> Edición </label>          
+          <input type="number" size="20" name="id" id="id" required>
         </div>
         <div class="mb-3">
-          <label for="venue"> Estadio </label>
-          <input type="text" name="venue" id="venue">
-        </div>
-        <div class="mb-3">
-          <label for="location"> Sede </label>
-          <input type="text" name="location" id="location">
-        </div>
-        <div class="mb-3">
-          <label for="winner"> Campeón </label>
-          <input type="text" name="winner" id="winner">
-        </div>
-        <div class="mb-3">
-          <label for="runner_up"> Sub-Campeón </label>
-          <input type="text" name="runner_up" id="runner_up">
-        </div>
-        <div class="mb-3">
-          <label for="score"> Resultado </label>
-          <input type="text" name="score" id="score">
-        </div>
-        <div class="mb-3">
-          <label for="attendance"> Espectadores </label>
-          <input type="number" name="attendance" id="attendance">
+          <label for="location" id="label_color"> Sede </label>
+          <input type="text" size="30" name="location" id="location" required>
         </div>        
         <div class="mb-3">
-          <label for="official_poster"> Poster Oficial </label>
-          <input type="text" name="official_poster" id="official_poster">
+          <label for="winner" id="label_color"> Campeón </label>
+          <input type="text" size="30" name="winner" id="winner" required>
         </div>
-
+        <div class="mb-3">
+          <label for="runner_up" id="label_color"> Sub-Campeón </label>
+          <input type="text" size="30" name="runner_up" id="runner_up">
+        </div>
+        <div class="mb-3">
+          <label for="score" id="label_color"> Resultado </label>
+          <input type="text" size="20" name="score" id="score">
+        </div>
+        <div class="mb-3">
+          <label for="venue" id="label_color"> Estadio </label>
+          <input type="text" size="30" name="venue" id="venue">
+        </div>
+        <div class="mb-3">
+          <label for="attendance" id="label_color"> Espectadores </label>
+          <input type="number" size="30" name="attendance" id="attendance">
+        </div>        
+        <div class="mb-3">
+          <label for="official_poster" id="label_color"> Poster Oficial </label>
+          <input type="text" size="30" name="official_poster" id="official_poster">
+        </div>
+        </strong>        
         <br>        
-    
-        <button type="button" class="btn btn-success" onclick="guardar()"> Grabar </button>
-
-      </form>
+        
+        <span>
+        <button type="button" class="btn btn-success" onclick="guardar()"> Grabar </button>        
+        <button type="reset" class="btn btn-success" margin:le> Borrar </button>         
+        </span>  
+      </form>      
     </div>
   </main>
 

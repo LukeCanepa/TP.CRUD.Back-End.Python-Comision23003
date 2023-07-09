@@ -65,11 +65,11 @@ function guardar(){
 
     fetch(url, options)
         .then(function(){
-        alert('Final FIFA World Cup guardada exitosamente !');
+        alert(`La Final de la FIFA World Cup edición ${id} a sido grabada exitosamente!`);
         window.location.href = './productos.html';
         })
         .catch((error)=>{
-            alert('Atención: No se pudo guardar la nueva final FIFA World Cup!');
+            alert(`Atención: No se pudo grabar la nueva final de la FIFA World Cup edición ${id}!`);
             console.error(error);
         })
 

@@ -13,9 +13,15 @@
   <!-- Es el ícono de la pestaña del Browser -->
   <link rel="icon" href="./img/FIFA-World-Cup-03.jpg" type="image/x-icon">  
 
+  <!-- Enlance al archivo de estilos de CSS -->
+  <link rel="stylesheet" href="./styles/styles.css"> 
+
+  <!-- Link de soporte de la biblioteca de animaciones de CSS Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 
-<body>
+<body id="second_background">
   <header id="header"></header>
 
   <main>
@@ -23,10 +29,10 @@
       <!--
       <h1> FIFA World Cup Final Matches </h1>   # Copa Mundial de Fútbol 
       -->
-      <h1> Finales de la FIFA World Cup </h1>
+      <h1 id="h1_anextitles" class="animate__animated animate__zoomInDown"> Finales de la FIFA World Cup </h1>
       
       <section v-if="error">
-        <p>Lo sentimos, no podemos mostrar los datos en este momento</p>
+        <p> Lo sentimos, no podemos mostrar los datos en este momento! </p>
       </section>
       <section v-else>
         <section v-if="cargando">
@@ -39,8 +45,15 @@
         </section>
         <section v-else>
           <a class="btn btn-success" href="producto_nuevo.html"> Agregar una Final </a>
-          <div  class="table-responsive" style="margin-top:1rem;">
-            <table class="table table-bordered">
+          <div class="table-responsive" style="margin-top:1rem;">
+            
+            <!--
+            <table class="table table-bordered" style="background-color: aliceblue">
+            
+            <table class="table table-bordered" style="background-color:darkseagreen">
+            -->           
+
+            <table class="table table-bordered" style="background-color:darkseagreen">
               <thead>
                 <tr>
                   <!--
@@ -55,11 +68,11 @@
                   <th scope="col"> Fecha </th>
                   -->
 
-                  <th scope="col"> Edición </th>                  
+                  <th scope="col"> Edición </th>
+                  <th scope="col"> Sede </th>                  
                   <th scope="col"> Campeón </th>
                   <th scope="col"> Sub-Campeón </th>
-                  <th scope="col"> Resultado </th>                  
-                  <th scope="col"> Sede </th>
+                  <th scope="col"> Resultado </th> 
                   <th scope="col"> Estadio </th>
                   <th scope="col"> Espectadores </th>
                   <th scope="col"> Poster Oficial </th>
@@ -86,11 +99,11 @@
                 
                 <tr class="" v-for="p in productos">
                   <td scope="row">{{p.id}}</td>
-                  <td>{{p.venue}}</td>
-                  <td>{{p.location}}</td>
+                  <td>{{p.location}}</td>                                 
                   <td>{{p.winner}}</td>                  
                   <td>{{p.runner_up}}</td>
                   <td>{{p.score}}</td>
+                  <td>{{p.venue}}</td> 
                   <td>{{p.attendance}}</td>
                   <td>
                     <img :src="p.official_poster" :alt="p.venue" width="100" height="100">
@@ -105,7 +118,7 @@
                     <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&winner='+p.winner+'&runner_up='+p.runner_up+'&score='+p.score+'&location='+p.location+'&venue='+p.venue+'&attendance='+p.attendance+'&official_poster='+p.official_poster"> Editar </a>
                     -->
                     
-                    <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&venue='+p.venue+'&location='+p.location+'&winner='+p.winner+'&runner_up='+p.runner_up+'&score='+p.score+'&attendance='+p.attendance+'&official_poster='+p.official_poster"> Editar </a>    
+                    <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&location='+p.location+'&winner='+p.winner+'&runner_up='+p.runner_up+'&score='+p.score+'&venue='+p.venue+'&attendance='+p.attendance+'&official_poster='+p.official_poster"> Editar </a>    
 
                     <button type="button" class="btn btn-danger" v-on:click="eliminar(p.id)"> Eliminar </button>
                   </td>

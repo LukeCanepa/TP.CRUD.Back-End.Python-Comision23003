@@ -36,9 +36,10 @@ document.getElementById('header').innerHTML = `<nav class="navbar navbar-expand-
   <div class="collapse navbar-collapse" id="collapsibleNavId">
     <ul class="navbar-nav me-auto mt-2 mt-lg-0">   
       <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
+       <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>       
        <div class="dropdown-menu" aria-labelledby="dropdownId">
-         <a class="dropdown-item" href="productos.html"> Anexo Finales </a>
+        <a class="dropdown-item" href="index.html"> Inicio </a>
+        <a class="dropdown-item" href="productos.html"> Listado de Finales </a>
        </div>
       </li>
     </ul>

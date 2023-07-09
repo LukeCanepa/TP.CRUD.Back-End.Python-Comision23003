@@ -64,11 +64,11 @@ for(let i = 0; i < argsUrl.length; i++){
 //console.log(data)
 
 document.getElementById('id').value = decodeURIComponent(data[0][1]);
-document.getElementById('venue').value = decodeURIComponent(data[1][1]);
-document.getElementById('location').value = decodeURIComponent(data[2][1]);
-document.getElementById('winner').value = decodeURIComponent(data[3][1]);
-document.getElementById('runner_up').value = decodeURIComponent(data[4][1]);
-document.getElementById('score').value = decodeURIComponent(data[5][1]);
+document.getElementById('location').value = decodeURIComponent(data[1][1]);
+document.getElementById('winner').value = decodeURIComponent(data[2][1]);
+document.getElementById('runner_up').value = decodeURIComponent(data[3][1]);
+document.getElementById('score').value = decodeURIComponent(data[4][1]);
+document.getElementById('venue').value = decodeURIComponent(data[5][1]);
 document.getElementById('attendance').value = decodeURIComponent(data[6][1]);
 document.getElementById('official_poster').value = decodeURIComponent(data[7][1]);
 
@@ -85,22 +85,22 @@ official_poster
 
 function modificar(){
     // Actualizar el producto en la BBDD    
-    let id = document.getElementById('id').value;            
-    let ven = document.getElementById('venue').value;
+    let id = document.getElementById('id').value;   
     let loc = document.getElementById('location').value;
     let win = document.getElementById('winner').value;
     let ru = document.getElementById('runner_up').value;
     let sc = document.getElementById('score').value;
+    let ven = document.getElementById('venue').value;
     let att = document.getElementById('attendance').value;
     let offp = document.getElementById('official_poster').value;
 
     let producto = {
-//      id : id,
-        venue: ven,
+//      id : id,      
+        venue: ven,  
         location: loc,
         winner: win,
         runner_up: ru,
-        score: sc,
+        score: sc,        
         att: att,
         official_poster: offp
     }
@@ -116,11 +116,11 @@ function modificar(){
 
     fetch(url, options)
     .then(function(){
-        alert('Final de FIFA World Cup modificada exitosamente!');
+        alert(`La Final de la FIFA World Cup edicion ${id} a sido modificada exitosamente!`);
         window.location.href= './productos.html';
     })
     .catch(err => {
-        alert('Atención: No se pudo modificar la final de FIFA World Cup!');
+        alert(`Atención: No se pudo modificar la final de la FIFA World Cup edicion ${id}!`);
         console.error(err);
     })
 }
