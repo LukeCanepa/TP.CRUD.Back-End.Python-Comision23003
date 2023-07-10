@@ -97,7 +97,7 @@ function modificar(){
     let offp = document.getElementById('official_poster').value;
 
     let producto = {        
-        id : id,
+//        id : id,
         venue: ven,  
         location: loc,
         winner: win,
