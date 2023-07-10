@@ -52,13 +52,13 @@ function modificar(){
 //console.log(location.search)
 
 let argsUrl = location.search.substring(1).split('&');
-
+//alert(argsUrl);
 //console.log(argsUrl)
 
 let data = [];
 for(let i = 0; i < argsUrl.length; i++){
-    data[i] = argsUrl[i].split('=');
-//    alert(argsUrl[i].split('='));
+    data[i] = argsUrl[i].split('==');
+//    alert(argsUrl[i].split('=='));
 }
 
 //console.log(data)
@@ -71,6 +71,8 @@ document.getElementById('score').value = decodeURIComponent(data[4][1]);
 document.getElementById('venue').value = decodeURIComponent(data[5][1]);
 document.getElementById('attendance').value = decodeURIComponent(data[6][1]);
 document.getElementById('official_poster').value = decodeURIComponent(data[7][1]);
+
+//alert(document.getElementById('official_poster').value);
 
 /*
 id_year

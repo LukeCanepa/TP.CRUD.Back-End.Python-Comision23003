@@ -29,7 +29,7 @@ createApp({
 //          alert(producto)
 //          alert('Se elimino satisfactoriamente la edicion de la FIFA World Cup '+producto)
 //            const url = 'http://localhost:5000/productos/'+producto;
-            const url = "https://lukecanepa.pythonanywhere.com/productos/"+producto;
+          const url = "https://lukecanepa.pythonanywhere.com/productos/"+producto;
             
             let options = {
                 method: 'DELETE'

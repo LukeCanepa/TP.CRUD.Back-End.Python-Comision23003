@@ -110,7 +110,7 @@
                   <td>{{p.venue}}</td> 
                   <td>{{p.attendance}}</td>
                   <td>
-                    <img :src="p.official_poster" :alt="p.venue" width="100" height="100">
+                    <img :src="p.official_poster" :alt="p.venue" width="140" height="145">
                   </td>
                   <td>
                     <!--
@@ -122,7 +122,7 @@
                     <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&winner='+p.winner+'&runner_up='+p.runner_up+'&score='+p.score+'&location='+p.location+'&venue='+p.venue+'&attendance='+p.attendance+'&official_poster='+p.official_poster"> Editar </a>
                     -->
                     
-                    <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&location='+p.location+'&winner='+p.winner+'&runner_up='+p.runner_up+'&score='+p.score+'&venue='+p.venue+'&attendance='+p.attendance+'&official_poster='+p.official_poster"> Editar </a>    
+                    <a class="btn btn-primary" :href="'producto_editar.html?id=='+p.id+'&location=='+p.location+'&winner=='+p.winner+'&runner_up=='+p.runner_up+'&score=='+p.score+'&venue=='+p.venue+'&attendance=='+p.attendance+'&official_poster=='+p.official_poster"> Editar </a>    
 
                     <button type="button" class="btn btn-danger" v-on:click="eliminar(p.id)"> Eliminar </button>
                   </td>
